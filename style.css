@@ -1,0 +1,116 @@
+:root {
+    --bg: #0d1117;
+    --panel-bg: #0f1622;
+    --panel-dark: #0e141f;
+    --snake: #00ff88;
+    --food: #ff3b6b;
+    --board-bg: #1b2333;
+    --grid: #2a3244;
+    --font: 'Poppins', sans-serif;
+
+    --radius-lg: 22px;
+    --radius-md: 14px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: var(--bg);
+    color: #fff;
+    font-family: var(--font);
+    display: flex;
+    overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.info-panel {
+    width: 260px;
+    background: linear-gradient(180deg, var(--panel-bg), var(--panel-dark));
+    padding: 25px 20px;
+    border-radius: 22px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #1e2638;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.info-box {
+    width: 100%;
+    background: #141b28;
+    padding: 16px 20px;
+    border-radius: 14px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #1f2737;
+    box-shadow: inset 0 0 10px #0a0f18;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-box span {
+    color: var(--snake);
+    font-weight: 700;
+}
+
+#pauseBtn {
+    margin-top: 10px;
+    padding: 14px 18px;
+    background: var(--snake);
+    color: #000;
+    font-weight: 700;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.25s ease;
+}
+
+#pauseBtn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 15px var(--snake);
+}
+
+.board {
+    flex-grow: 1;
+    margin: 15px 15px 15px 0;
+    background: var(--board-bg);
+    border-radius: 22px;
+    border: 4px solid var(--snake);
+    overflow: hidden; 
+    display: grid; 
+    box-shadow: 0 0 20px rgba(0,255,150,0.4);
+}
+
+
+.block {
+   
+     width: 100%;
+    height: 100%;
+    background: var(--grid);
+    border: 1px solid rgba(15, 23, 42, 0.3);
+}
+
+.snake {
+    background: var(--snake);
+    box-shadow: 0 0 10px var(--snake);
+}
+
+.food {
+    background: var(--food);
+    box-shadow: 0 0 10px var(--food);
+}
