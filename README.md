@@ -56,6 +56,9 @@ No libraries, no frameworks — pure vanilla JS
 
 📁 Project Structure
 📦 snake-game
+
  ┣ 📜 index.html
+ 
  ┣ 📜 style.css
+ 
  ┗ 📜 script.js
