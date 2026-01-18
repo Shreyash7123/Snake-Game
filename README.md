@@ -57,8 +57,10 @@ No libraries, no frameworks — pure vanilla JS
 📁 Project Structure
 📦 snake-game
 
- ┣ 📜 index.html
+ ┣ index.html
  
- ┣ 📜 style.css
+ ┣ style.css
  
- ┗ 📜 script.js
+ ┗ script.js
+<img width="1899" height="888" alt="image" src="https://github.com/user-attachments/assets/635f9799-be34-4b64-80e3-3d70ae4dee2a" />
+
